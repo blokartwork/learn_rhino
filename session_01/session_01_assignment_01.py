@@ -7,10 +7,14 @@ radius = 100
 theta = 0
 pi = math.pi
 
-while theta < (2 * pi):
-    x = radius * math.cos(theta)
-    y = radius * math.sin(theta)
+while z < 100:
+    theta = 0
+    while theta < (2 * pi):
+        x = radius * math.cos(theta)
+        y = radius * math.sin(theta)
 
-    rs.AddPoint(x,y,z)
+        rs.AddPoint(x,y,z)
 
-    theta += 0.02
+        theta += 0.02
+
+    z += 1
